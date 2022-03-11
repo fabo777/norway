@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom";
+import Norway from "./Components/Norway";
+import Reine from "./Components/Reine";
+import Trolltunga from "./Components/Trolltunga";
+import Flam from "./Components/Flam";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <>
+          <Route path={"/"} exact element={<Norway home={true} />} />
+          <Route path={"/reine"} element={<Reine />} />
+          <Route path={"/trolltunga"} element={<Trolltunga />} />
+          <Route path={"/flam"} element={<Flam />} />
+        </>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

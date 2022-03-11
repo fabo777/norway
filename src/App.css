@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+:root {
+  font-size: 16px;
+}
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+.norway {
+  margin: 0%;
+  padding: 0%;
+  background-image: url("images/norway.jpg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  display: flex;
+
+  position: absolute;
+  scroll-behavior: auto;
+
+  width: 100vw;
+  height: 100vh;
+
+  left: 0%;
+  top: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.textNorway {
+  position: absolute;
+  /* width: 328px;
+  height: 216px;
+  left: 160px;
+  top: 300px; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  left: 8%;
+  top: 35%;
+  max-width: 323px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1rem;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: #ffffff;
+}
+.buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  min-width: 177px;
+  min-height: 316px;
+  justify-content: space-between;
+  top: 30%;
+  right: 0%;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonsfond {
+  min-width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 0%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1000px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: -50%;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .trolltungaTextHeader {
+    font-size: 2rem;
+    left: 1%;
+    top: -10%;
+  }
+  .textReine {
+    font-weight: 600;
+
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+    letter-spacing: 0.025rem;
+  }
+  .norway {
+    background-position: auto;
+  }
+  .reine {
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+.reine {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)),
+    url("images/reine.jpg");
+
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  left: 0%;
+  top: 0%;
+}
+.trolltunga {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)),
+    url("images/trolltunga.jpg");
+
+  background-position: bottom left;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+}
+.flam {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)),
+    url("images/flam2.jpg");
+
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+}
+
+.trolltungaTextHeader {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  mix-blend-mode: overlay;
+  font-family: Poppins;
+  font-size: 6.5rem;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+}
+
+.trolltungaTextHeader2 {
+  position: absolute;
+  max-width: 211px;
+  left: 8%;
+  top: 25%;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 63px;
+  mix-blend-mode: overlay;
+  letter-spacing: 0.1rem;
+  mix-blend-mode: overlay;
+  color: #ffffff;
+}
+
+.textReine {
+  position: absolute;
+  left: 8%;
+  top: 35%;
+  max-width: 727px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.05rem;
+
+  color: #ffffff;
+}
+@media only screen and (max-width: 654px) {
+  :root {
+    font-size: 14px;
+  }
+  .buttons {
+    bottom: -70%;
+  }
+}
+@media only screen and (max-width: 586px) {
+  .trolltungaTextHeader {
+    width: 80vw;
+    font-size: 4.8rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  :root {
+    font-size: 13px;
+  }
+
+  .trolltungaTextHeader {
+    width: 80vw;
+    font-size: 4.3rem;
+
+    letter-spacing: 0.1rem;
+  }
+  .textReine {
+    font-weight: 600;
+
+    font-size: 1.2rem;
+    line-height: 1rem;
+    letter-spacing: 0.06rem;
+  }
+  .trolltungaTextHeader2 {
+    font-size: 3rem;
+    top: 20%;
+    letter-spacing: 0.1rem;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: -66%;
+    justify-content: center;
+  }
+  .norway {
+    background-position: cover;
+    scroll-behavior: none;
+  }
+  .trolltunga {
+    background-position: center;
+  }
+  .reine {
+    background-position: right;
+  }
+  .flam {
+    background-position: center;
   }
 }
